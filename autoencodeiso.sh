@@ -2,7 +2,7 @@
 
 # Configuration variables (sanitized)
 ISO_FOLDER="/path/to/iso"
-OUTPUT_FOLDER="/path/to/encoded"
+OUTPUT_FOLDER="/path/to/temp/folder"
 KNOWN_DISKS_FILE="$ISO_FOLDER/known_disks.txt"
 ENCODED_DISKS_FILE="$OUTPUT_FOLDER/encoded_disks.txt"
 STATE_FILE="$ISO_FOLDER/state.txt"
