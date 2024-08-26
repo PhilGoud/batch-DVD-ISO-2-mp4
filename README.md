@@ -34,7 +34,8 @@ It adds the {NAME} to a list of *processed_mp4.txt* file not to generate them ag
 ### Step 5 
 
 You can compare the ISOs to the MP4s, to see how many are missing, you can use *compare_iso_mp4.sh*
-If you want to be throrough, you can compare the VOB to the mp4 in the {temp_folder} with *compare_vob_mp4.sh*
+
+If you want to be throrough, you can compare the VOB in the ISO files to the mp4 in the {temp folder} with *compare_vob_mp4.sh*
 
 ## Notes
 
