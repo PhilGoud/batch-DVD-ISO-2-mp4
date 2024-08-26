@@ -54,5 +54,5 @@ Because it allow more flexibility and checks, as for example comparing the VOB f
 ### Why adding silence to audio-less videos ?
 Because if one of the mp4 has no audio track, when concatenating, it removes the audio to the other parts.
 
-### Why do I have the dvd menus at the start ?
+### Why do I have the DVD menu at the start of my MP4 ?
 Because I wanted to archive it as well. You may remove them easily by modifying *autoconcatmp4.sh* (Lines 87-98) to remove VIDEO_TS file from the concatenation
