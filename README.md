@@ -27,4 +27,4 @@ It adds the {NAME} to a list of *processed_mp4.txt* file not to generate them ag
 
 ### STEP 5 
 
-You can compare the ISOs to the MP4s, to see how many are missing, you can use *compareisomp4.sh*
+You can compare the ISOs to the MP4s, to see how many are missing, you can use *compare_iso_mp4.sh*
