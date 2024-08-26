@@ -4,7 +4,7 @@
 ISO_FOLDER="/path/to/iso"
 OUTPUT_FOLDER="/path/to/encoded"
 KNOWN_DISKS_FILE="$ISO_FOLDER/known_disks.txt"
-ENCODED_DISKS_FILE="$ISO_FOLDER/encoded_disks.txt"
+ENCODED_DISKS_FILE="$OUTPUT_FOLDER/encoded_disks.txt"
 STATE_FILE="$ISO_FOLDER/state.txt"
 TOKEN_TELEGRAM="REMOVED"  # Telegram bot token
 CHAT_ID="REMOVED"  # Telegram chat ID
