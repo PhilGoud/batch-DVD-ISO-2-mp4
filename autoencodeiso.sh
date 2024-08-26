@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Configuration variables (sanitized)
+# Configuration variables
 ISO_FOLDER="/path/to/iso"
 OUTPUT_FOLDER="/path/to/temp/folder"
 KNOWN_DISKS_FILE="$ISO_FOLDER/known_disks.txt"
