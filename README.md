@@ -1,5 +1,9 @@
 # batch-DVD-ISO-2-mp4
-How to encode 150 DVDs easily and get Telegram notifications while it's working for you
+How to archive 150 DVDs easily in mp4 and get Telegram notifications while it's working for you
+
+## Requirements
+- HandbrakeCLI
+- ffmpeg
 
 ## How it works 
 
@@ -9,22 +13,34 @@ Create a /ISO folder with all your ISOs
 
 ### STEP 2
 
-As a precaution (like for example ISOs in the middle of a transfer) you have a *known_iso.txt* file that declares all available ISOs to encode.
+You need a *known_iso.txt* file that declares all available ISOs to encode.
 
 You can auto-generate it with *known_iso_generator.sh*
 
 ### STEP 3 
 
-*autoencodeiso.sh* mounts one ISO, gets all the VOB files, encodes them and puts them in a /ISO-encoded/{NAME} folder
+*autoencodeiso.sh* mounts one ISO, gets all the VOB files, encodes them and puts them in a /{temp folder}/{NAME} folder
 
-When done, it add the name to the *encoded_disks.txt* file
+When done, it add the name to the *encoded_disks.txt* file generated in the {temp folder}
 
 ### STEP 4 
 
-*autoconcatmp4.sh* for every line of encoded_disk.txt gets all mp4 generated in the {NAME} subfolder, and creates a mp4 with chapters
+*autoconcatmp4.sh* for every line of encoded_disk.txt gets all mp4 generated in the /{temp folder}/{NAME} subfolder, and creates a mp4 with chapters
 
 It adds the {NAME} to a list of *processed_mp4.txt* file not to generate them again
 
 ### STEP 5 
 
 You can compare the ISOs to the MP4s, to see how many are missing, you can use *compare_iso_mp4.sh*
+If you want to be throrough, you can compare the VOB to the mp4 in the {temp_folder} with *compare_vob_mp4.sh*
+
+## Notes
+
+### Why Handbrake and ffmpeg and not just one of them ?
+Because desinterlacing with Handbrake is waaay easier to configure to have a good result
+
+## Why are the files so huge ?
+My purpose here is to archive family DVDs, so i want to be able to have a kind of "Master" as close to DVD quality as possible, even a little bit better via post-treatment.
+
+## Why those txt files ?
+As you are transfering the ISO or encoding mp4, you don't want the scripts to start working on these partial files. So I use these files to tell that is is ready to be treated.
