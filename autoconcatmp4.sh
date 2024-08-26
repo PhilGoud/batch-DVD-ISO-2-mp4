@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # User-defined variables
-root_folder="/path/to/encoded"
+root_folder="/path/to/temp/folder"
 list_file="$root_folder/encoded_disks.txt"
 processed_file="$root_folder/processed_mp4.txt"
 destination_folder="/path/to/destination"
