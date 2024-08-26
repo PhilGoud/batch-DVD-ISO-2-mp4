@@ -50,3 +50,6 @@ As you are transfering the ISO or encoding mp4, you don't want the scripts to st
 
 ### Why not a single script with encode and concat ?
 Because it allow more flexibility and checks, as for example comparing the VOB files in the ISOs to the MP4 files created in the {temp folder}
+
+### Why adding silence to audio-less videos ?
+Because if one of the mp4 has no audio track, when concatenating, it removes the audio to the other parts.
