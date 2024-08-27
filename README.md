@@ -27,7 +27,11 @@ When done, it add the name to the *encoded_disks.txt* file generated in the {tem
 
 ### Step 4 
 
-*autoconcatmp4.sh* for every line of encoded_disk.txt gets all mp4 generated in the /{temp folder}/{NAME} subfolder, and creates a mp4 with chapters to be sent to your {destination folder}
+*autoconcatmp4.sh* for every line of encoded_disk.txt gets all mp4 generated in the /{temp folder}/{NAME} subfolder, and creates 
+1 - a mp4 with all VOB files
+2 - if multiple tracks, one mp4 per track
+3 - if menu videos, one mp4 with the menus
+All will be sent to your {destination folder}
 
 It adds the {NAME} to a list of *processed_mp4.txt* file not to generate them again
 
@@ -50,9 +54,3 @@ As you are transfering the ISO or encoding mp4, you don't want the scripts to st
 
 ### Why not a single script with encode and concat ?
 Because it allow more flexibility and checks, as for example comparing the VOB files in the ISOs to the MP4 files created in the {temp folder}
-
-### Why adding silence to audio-less videos ?
-Because if one of the mp4 has no audio track, when concatenating, it removes the audio to the other parts.
-
-### Why do I have the DVD menu at the start of my MP4 ?
-Because I wanted to archive it as well. You may remove them easily by modifying *autoconcatmp4.sh* (Lines 87-98) to remove VIDEO_TS file from the concatenation
