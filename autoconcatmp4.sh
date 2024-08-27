@@ -5,7 +5,7 @@ BASE_DIR="/path/to/encoded/ISOs/"
 # Destination folder
 DESTINATION="/path/to/mp4/destination"
 # Log file to keep track of processed subfolders
-LOG_FILE="$BASE_DIR/processed_folders_chap.txt"
+LOG_FILE="$BASE_DIR/processed_folders.txt"
 # Text file containing list of folders to process
 FOLDER_LIST="/path/to/iso/known_disks.txt"
 # Text file containing list of ready folders
