@@ -8,11 +8,17 @@ How to archive 150 DVDs easily in mp4 and get Telegram notifications while it's 
 ## How it works :
 
 +-----------+                    +--------------+                  +----------------+
+
 |    ISO    |                    |     TEMP     |                  |   DESTINATION  |
+
 |   FOLDER  |  autoencodeiso.sh  |    FOLDER    | autoconcatmp4.sh |     FOLDER     |
+
 |           +------------------->|              +----------------->|                |
+
 |           |                    |              |                  |                |
+
 +-----------+                    +--------------+                  +----------------+
+
 
 
 ### Step 1
