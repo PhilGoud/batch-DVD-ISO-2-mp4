@@ -7,7 +7,7 @@ How to archive 150 DVDs easily in mp4 and get Telegram notifications while it's 
 
 ## How it works :
 
-{ISO folder} => {temp folder} => {destination folder}
+{ISO folder} =>[autoencodeiso.sh]=> {temp folder} =>[autoconcatmp4.sh]=> {destination folder}
 
 ### Step 1
 
@@ -28,9 +28,9 @@ When done, it add the name to the *encoded_disks.txt* file generated in the {tem
 ### Step 4 
 
 *autoconcatmp4.sh* for every line of encoded_disk.txt gets all mp4 generated in the /{temp folder}/{NAME} subfolder, and creates 
-1 - a mp4 with all VOB files
-2 - if multiple tracks, one mp4 per track
-3 - if menu videos, one mp4 with the menus
+1 - a mp4 containing all VOB files
+2 - if multiple tracks, one mp4 per track (VTS_01_1 & VTS_01_2 are one track, VTS_02_1 & VTS_02_2 are another track)
+3 - if menu videos, one mp4 with the menus (VIDEO_TS & VTS_01_0 are considered menu files and are concatenated)
 All will be sent to your {destination folder}
 
 It adds the {NAME} to a list of *processed_mp4.txt* file not to generate them again
