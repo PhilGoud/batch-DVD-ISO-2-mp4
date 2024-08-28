@@ -17,7 +17,7 @@ Create a {ISO folder} with all your ISOs
 
 You need a *known_iso.txt* file that declares all available ISOs to encode.
 
-You can auto-generate it with *known_iso_generator.sh*
+You can auto-generate it with *known_disks_generator.sh*
 
 ### Step 3 
 
